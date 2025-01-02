@@ -1,11 +1,29 @@
 {
   "name": "monaco-alpinejs",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "main": "dist/monaco-alpinejs.umd.js",
+  "module": "dist/monaco-alpinejs.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/monaco-alpinejs.es.js",
+      "require": "./dist/monaco-alpinejs.umd.js"
+    }
+  },
   "author": "AbdulRahman El-zahaby",
   "license": "MIT",
   "description": "An Alpine plugin for Monaco Editor",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^6.0.6",
+    "vite-plugin-monaco-editor": "^1.1.0"
+  },
   "dependencies": {
+    "monaco-editor": "^0.52.2"
+  },
+  "peerDependencies": {
     "monaco-editor": "^0.52.2"
   }
 }
