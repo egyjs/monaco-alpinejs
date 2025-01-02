@@ -1,6 +1,6 @@
 {
   "name": "monaco-alpinejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/monaco-alpinejs.umd.js",
   "module": "dist/monaco-alpinejs.es.js",
   "exports": {
